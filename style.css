@@ -90,6 +90,7 @@ nav ul a {
         position: sticky;
         margin-bottom: 10px;
         padding-bottom: 10px;
+        z-index: 1;
     }
 
     .logo {
@@ -111,8 +112,12 @@ nav ul a {
     nav ul a {
         font-size: 3.5vw;
         padding: 0 1vw;
-        color: white;
-        background-color: cornflowerblue;
+        color: cornflowerblue;
+        /* background-color: cornflowerblue; */
+        border-style: solid;
+        border-color: cornflowerblue;
+        border-width: 2px;
+        border-radius: 5px;
     }
 }
 
@@ -241,20 +246,13 @@ nav ul a {
   }
 
 .gallery-cell {
-    width: 66%;
-    height: 200px;
-    margin-right: 10px;
+    width: 100%;
     counter-increment: gallery-cell;
   }
   
   /* cell number */
   .gallery-cell:before {
-    display: block;
-    text-align: center;
     content: counter(gallery-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
   }
 
 
