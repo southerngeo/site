@@ -243,17 +243,16 @@ nav ul a {
 /* CAROUSEL */
 .gallery {
     margin: 20px;
-  }
+}
 
 .gallery-cell {
-    width: 100%;
     counter-increment: gallery-cell;
-  }
+}
   
   /* cell number */
-  .gallery-cell:before {
+.gallery-cell:before {
     content: counter(gallery-cell);
-  }
+}
 
 
 #map {
